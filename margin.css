@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    /* ? bu sıfırlamadır genellikle her CSS de kullanılır daha kolay style verebilmek için tercih edilir */
+    font-size: 30px;
+}
+.container{
+    background-color: darkorange;
+    margin-top: 20px;
+}
+.box1{
+    background-color: red;
+
+}
+.box2{
+    background-color: aqua;
+    border: 3px solid black;
+    /* margin: 20px 50px 80px 15px; */
+    /* ? saat yönünde işler objemizin çevresine olan uzaklığını belirler */
+    width: 100px;
+    margin: 50px auto;
+    /* ? width vermeden margin: auto; verirsek tüm alanı kaplar ancak biz width ile boyutunu ayarlarsak kendisi otomatik olarak ortalar */
+    padding: 15px;
+    text-align: center;
+    /* * kutu içinde ortalamak için ilerde görülecek */
+}
+.box3{
+    background-color: blueviolet;
+    margin-top: 20px;
+    /* ! marginler üst üste bindiklerinde birbirlerinin içine geçerler yani yukarıda 50 px verdiğimizde onun altındaki box3'e margin-top: 20px; versek bile bir değişiklik olmaz */
+}
+.box4{
+    background-color: crimson;
+    margin: inherit;
+    /* ? margin: inherit; ana taşıyıcının , parent'ın yani burada container div margin değerini aynen alır  */
+}

@@ -1,0 +1,42 @@
+*{
+    font-size: 35px;
+    /* ! tüm sayfayı seçmek için * kullanılır ve bu şekilde default olarak tüm sayfaya style verilebilir örn=> font-size: 20px; diyerek sayfada bulunan tüm yazıları 20px yapabilirz */
+}
+/* grup seçiciler */
+div{
+    /* border: 2px solid red; */
+    /* ? tüm divleri alır */
+}
+div p{
+        /* border: 2px solid red; */
+        /* ? divlerin içindeki paragrafları alır */
+}
+.container div p{
+    background-color: aqua;
+    /* ? container içindeki divin içerisindeki p yi alır */
+    /* ? classları seçeceğimiz zaman . ile başlayıp class ismini yazarız id ise # işareti koyup sonrasında id'mizi yazaroz */
+}
+p + div {
+    background-color: chocolate;
+    /* ? p den sonra gelen divi alır */
+}
+
+/* ! attribute ile style vermek için */
+p[title="baslık1"]{
+    background-color: blueviolet;
+}
+p[title="baslık2"]{
+    background-color: rgb(8, 99, 84);
+}
+h1[title="baslık3"]{
+    background-color: darkgoldenrod;
+}
+p::first-letter{
+    font-size: 2rem;
+
+}
+p::first-line{
+    font-style: italic;
+    font-weight: bold;
+
+}

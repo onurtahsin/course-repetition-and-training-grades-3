@@ -1,0 +1,28 @@
+*{
+    font-size: 25px;
+}
+.p1{
+    border-width: 3px 20px 15px;
+    border-style: solid dotted ridge dashed;
+    border-color: blue rgb(0, 0, 0) red green;
+    /* ? yukarıdan başlarak sağa doğru border style verilebilir  saat yönünde*/
+}
+.p2{
+    border: 5px dashed red;
+}
+.p3{
+    width: 120px;
+    height: 120px;
+    border: 10px solid red;
+
+    border-radius: 50%;
+    /* ? border-radius: ; kısaca kenar yumuşatma olarak tanımlanabilir 0 en düşük değerdir yani hiç kenar yumuşatma yok  50% vererek tam kare elementleri yuvarlak border içine alabiliriz*/
+}
+.p4{
+    border: 20px double blue;
+    /* ? 2 border */
+}
+.p5{
+    border: 15px groove red;
+    /* ? 2 farklı ton olan border */
+}
